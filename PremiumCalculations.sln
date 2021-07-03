@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PremiumCalculationAPI", "PremiumCalculationAPI\PremiumCalculationAPI.csproj", "{954B4186-3A8E-4874-9AA6-67F0E24CED4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PremiumCalculationNUnitTesting", "PremiumCalculationNUnitTesting\PremiumCalculationNUnitTesting.csproj", "{F451F3CD-7C14-4C4C-804E-F17946DCCC4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{954B4186-3A8E-4874-9AA6-67F0E24CED4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954B4186-3A8E-4874-9AA6-67F0E24CED4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954B4186-3A8E-4874-9AA6-67F0E24CED4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954B4186-3A8E-4874-9AA6-67F0E24CED4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F451F3CD-7C14-4C4C-804E-F17946DCCC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F451F3CD-7C14-4C4C-804E-F17946DCCC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F451F3CD-7C14-4C4C-804E-F17946DCCC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F451F3CD-7C14-4C4C-804E-F17946DCCC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D932EA5E-C609-4A64-9301-64CB359F308D}
+	EndGlobalSection
+EndGlobal
