@@ -1,3 +1,5 @@
+using CoreWebApplication.Data;
+using CoreWebApplication.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace PremiumCalculationAPI
 {
@@ -25,6 +28,11 @@ namespace PremiumCalculationAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<PremiumContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PremiumDBConn")));
+
+            services.AddScoped<IPremiumBAL, PremiumBAL>();
+            services.AddScoped<IPremiumDAL, PremiumDAL>();
+
             services.AddControllers();
         }
 
@@ -35,6 +43,12 @@ namespace PremiumCalculationAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(x => x
+               .AllowAnyMethod()
+               .AllowAnyHeader()
+               .SetIsOriginAllowed(origin => true) // allow any origin
+               .AllowCredentials());
 
             app.UseHttpsRedirection();
 
