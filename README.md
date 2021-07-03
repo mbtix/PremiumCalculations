@@ -14,5 +14,5 @@ Premium calculation
 	Once build is successful, url will be open in the browser 'http://localhost:4200/premium'
 	d. Follow the test cases for testing this 'http://localhost:4200/premium' application
 
-***********For testing flow the unit test cases provided in excel************
+***********For testing flow the unit test cases provided in excel Test-cases.xls************
 Test Cases available in https://github.com/mbtix/PremiumCalculations
