@@ -23,7 +23,7 @@ namespace CoreWebApplication.Controllers
         [HttpGet]
         public string Get()
         {
-            return "value";
+            return "API Service Started successfully";
         }
 
         // POST: api/Premium
