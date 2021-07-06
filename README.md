@@ -6,15 +6,18 @@ Premium calculation
 	b. Install Angualr CLI using cmd window -  npm install -g angular/cli  
 	c. Install Visual Studio 2019:https://visualstudio.microsoft.com/downloads/
 	d.Install .NET Core 3.1:https://dotnet.microsoft.com/download/dotnet/3.1
-2. Download the 2 projects from GitHub
-	a. Download WebAPi Solution and files from https://github.com/mbtix/PremiumCalculations
-  and open CoreWebApplication.sln usiing Visual Studio 2019
- 	b.Run the Solution,  (PremiumCalculationAPI.csproj should be the startup project) API service should start running.
-	c. url:https://localhost:44316/PremiumCalculation  should be opened in the browser. Don't close the browser
-	d.For NUnit testing , stop the run. And manual run the tests by rick click on Nunit Project
-	c. Download https://github.com/mbtix/PremiumCalculationUI from GitHub and open cmd promt from PremiumCalcuation path. Run the cmd - npm start, used to build and start the application. 
-	Once build is successful, url will be open in the browser 'http://localhost:4200/premium'
-	d. Follow the test cases for testing this 'http://localhost:4200/premium' application
+	
+Deployment Process:
+-------------------
+1. Download the 2 projects from GitHub
+	a. Download or clone WebAPi files from https://github.com/mbtix/PremiumCalculations and open CoreWebApplication.sln usiing Visual Studio 2019
+ 	b. Run the Solution using visual studio 2019 or press f5, (PremiumCalculationAPI.csproj should be the startup project), once  API service started, https://localhost:44316/PremiumCalculation url will be launched with message - API Service Started successfully, don't close the url.
+	c. Download https://github.com/mbtix/PremiumCalculationUI from GitHub branch **Master** into a local folder named 'PremiumCalcuation'. Once download is done, open cmd promt from  path. Run below commands,
+			1.run the cmd - 'npm install', all packages will be downloaded and installed in local environment
+			2.Run the cmd - 'npm start', used to build and start the application. 
+	d. Once build is successful, url will be open in the browser 'http://localhost:4200/premium'
+	e. Follow the test cases for testing this 'http://localhost:4200/premium' application, test cases provided in xl sheet as mentioned below.
+	f. For NUnit testing on API, stop the API Service. And manual run the tests by right click on Nunit Project and run all tests.
 
 ***********For testing flow the unit test cases provided in excel Test-cases.xls************
 Test Cases available in https://github.com/mbtix/PremiumCalculations
