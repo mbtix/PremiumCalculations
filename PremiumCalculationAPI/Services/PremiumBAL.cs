@@ -28,7 +28,7 @@ namespace CoreWebApplication.Services
             double deathPremium = 0.0;
 
            //validate age,death assured and occupation
-           if(pm.Age == 0 || pm.DeathAssured == 0 || string.IsNullOrEmpty(pm.Occupation))
+           if(pm.Age == 0 || pm.DeathInsured == 0 || string.IsNullOrEmpty(pm.Occupation))
             {
                 return 0;
             }
@@ -53,7 +53,7 @@ namespace CoreWebApplication.Services
             }
 
             // Calcuation of premium
-            deathPremium = (pm.DeathAssured * ratingFactor * pm.Age) / 1000 * 12;
+            deathPremium = (pm.DeathInsured * ratingFactor * pm.Age) / 1000 * 12;
             return deathPremium;
         }
 

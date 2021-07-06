@@ -28,6 +28,11 @@ namespace CoreWebApplication.Controllers
 
         // POST: api/Premium
 
+        /// <summary>
+        /// Calcuate Premium based on Age, death insured and Occupation
+        /// </summary>
+        /// <param name="premium"></param>
+        /// <returns></returns>
         [HttpPost]
         public double Post([FromBody] PremiumVM premium)
         {

@@ -24,7 +24,7 @@ namespace PremiumCalculationTests
             var controller = new PremiumCalculationController(_premiumBAL);
             var premiumVM = new PremiumVM();
             premiumVM.Age = 35;
-            premiumVM.DeathAssured = 2000;
+            premiumVM.DeathInsured = 2000;
             premiumVM.FullName = "TestUser";
             premiumVM.Occupation = "WCL";
 
@@ -46,7 +46,7 @@ namespace PremiumCalculationTests
           
             var premiumVM = new PremiumVM();
             premiumVM.Age = 0;
-            premiumVM.DeathAssured = 2000;
+            premiumVM.DeathInsured = 2000;
             premiumVM.FullName = "TestUser";
             premiumVM.Occupation = "WCL";
 
@@ -67,7 +67,7 @@ namespace PremiumCalculationTests
            
             var premiumVM = new PremiumVM();
             premiumVM.Age = 25;
-            premiumVM.DeathAssured = 0;
+            premiumVM.DeathInsured = 0;
             premiumVM.FullName = "TestUser";
             premiumVM.Occupation = "WCL";
 
@@ -88,7 +88,7 @@ namespace PremiumCalculationTests
 
             var premiumVM = new PremiumVM();
             premiumVM.Age = 25;
-            premiumVM.DeathAssured = 10000;
+            premiumVM.DeathInsured = 10000;
             premiumVM.FullName = "TestUser";
             premiumVM.Occupation = "";
 

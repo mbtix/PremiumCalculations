@@ -8,7 +8,7 @@ namespace CoreWebApplication.Model
 
         public int Age { get; set; }
 
-        public long DeathAssured { get; set; }
+        public long DeathInsured { get; set; }
 
         public string Occupation { get; set; }
         public string CalculatedValue { get; set; }
