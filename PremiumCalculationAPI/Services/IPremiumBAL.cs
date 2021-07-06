@@ -1,4 +1,5 @@
 ﻿using CoreWebApplication.Controllers;
+using CoreWebApplication.Model;
 using System.Collections.Generic;
 
 namespace CoreWebApplication.Services

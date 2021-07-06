@@ -1,4 +1,5 @@
 ﻿using CoreWebApplication.Controllers;
+using CoreWebApplication.Model;
 
 namespace CoreWebApplication.Services
 {
@@ -26,7 +27,13 @@ namespace CoreWebApplication.Services
         {
             double deathPremium = 0.0;
 
-           // set rating factor base don Occupation
+           //validate age,death assured and occupation
+           if(pm.Age == 0 || pm.DeathAssured == 0 || string.IsNullOrEmpty(pm.Occupation))
+            {
+                return 0;
+            }
+
+            // set rating factor based on Occupation
             double ratingFactor = 0.0;
             if(pm.Occupation == EnumOccupationRating.HML.ToString())
             {
@@ -44,7 +51,8 @@ namespace CoreWebApplication.Services
             {
                 ratingFactor = WCLRactingFactor;
             }
-            // Calcuation 
+
+            // Calcuation of premium
             deathPremium = (pm.DeathAssured * ratingFactor * pm.Age) / 1000 * 12;
             return deathPremium;
         }

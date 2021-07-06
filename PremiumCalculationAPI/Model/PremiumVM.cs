@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace CoreWebApplication.Controllers
+namespace CoreWebApplication.Model
 {
     public class PremiumVM
     {
         public string FullName { get; set; }
-
-        public DateTime DOB { get; set; }
 
         public int Age { get; set; }
 
