@@ -11,7 +11,7 @@ namespace CoreWebApplication.Model
         public long DeathAssured { get; set; }
 
         public string Occupation { get; set; }
-        public double CalculatedValue { get; set; }
+        public string CalculatedValue { get; set; }
 
     }
 
