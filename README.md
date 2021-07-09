@@ -12,7 +12,7 @@ Deployment Process:
 1. Download the 2 projects from GitHub
 	a. Download or clone WebAPi files from https://github.com/mbtix/PremiumCalculations and open CoreWebApplication.sln usiing Visual Studio 2019
  	b. Run the Solution using visual studio 2019 or press f5, (PremiumCalculationAPI.csproj should be the startup project), once  API service started, https://localhost:44316/PremiumCalculation url will be launched with message - API Service Started successfully, don't close the url.
-	c. Download https://github.com/mbtix/PremiumCalculationUI from GitHub branch **Master** into a local folder named 'PremiumCalcuation'. Once download is done, open cmd promt from  path. Run below commands,
+	c. Download https://github.com/mbtix/PremiumCalculationUI/tree/master from GitHub branch **Master** into a local folder named 'PremiumCalcuation'. Once download is done, open cmd promt from  path. Run below commands,
 			1.run the cmd - 'npm install', all packages will be downloaded and installed in local environment
 			2.Run the cmd - 'npm start', used to build and start the application. 
 	d. Once build is successful, url will be open in the browser 'http://localhost:4200/premium'
